@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { useOutletContext } from "react-router-dom";
 import styles from './Shop.module.css'
 
-function Shop() {
+function ShopClearance() {
   const { addToCart } = useOutletContext();
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
@@ -10,7 +10,7 @@ function Shop() {
   const [quantities, setQuantities] = useState({})
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
+    fetch('https://fakestoreapi.com/products/category/jewelery')
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response not ok!');
@@ -69,7 +69,7 @@ function Shop() {
   }
   return (
     <div className={styles.container}>
-      <h2> Our products </h2>
+      <h2> Clearance products... won&apos;t last long!!! </h2>
       <div className={styles.productsGrid}>
         {products.map(product => (
           <div
@@ -115,4 +115,4 @@ function Shop() {
   )
 }
 
-export default Shop;
+export default ShopClearance;

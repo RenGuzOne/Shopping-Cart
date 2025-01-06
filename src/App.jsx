@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Outlet } from 'react-router-dom';
-import Navbar from './components/common/navbar'
+import Navbar from './components/navbar'
 import Shop from './pages/Shop';
 
 function App() {

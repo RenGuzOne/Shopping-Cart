@@ -10,6 +10,7 @@ function Navbar({ cartItemCount }) {
       <div className={styles.navLinks}>
         <Link to="/"className={styles.link}>Home</Link>
         <Link to="/shop" className={styles.link}>Shop</Link>
+        <Link to="/clearance" className={styles.link}>Shop Clearance</Link>
         <div className={styles.cartInfo}>
           <span> Cart: {cartItemCount}</span>
           <Link to="/cart" className={styles.checkoutButton}>Checkout</Link>

@@ -16,14 +16,15 @@ function Home() {
         </div>
 
         <div className={styles.feature}>
-          <img src="https://picsum.photos/300/200?1" alt="Quality products" className={styles.featureImage} />
+          <img src="https://picsum.photos/300/200?2" alt="Quality products" className={styles.featureImage} />
+          <h2>Dedicated to Quality</h2>
           <p>Curated selection of the best items</p>
         </div>
 
         <div className={styles.feature}>
           <img src="https://picsum.photos/300/200?3" alt="24/7 Support" className={styles.featureImage} />
           <h2>24/7 Support</h2>
-          <p>We're here to help anytime</p>
+          <p>We&apos;re here to help anytime!</p>
         </div>
       </div>
     </div>
