@@ -12,7 +12,7 @@
   color: black;
   border-radius: 45px;
   text-transform: uppercase;
-  max-width: 400px;
+  max-width: 600px;
   font-size: 16px;
   margin-left: auto;
 }
@@ -20,6 +20,7 @@
 
 .navLinks {
   display: flex;
+  justify-content: space-around;
   gap: 2rem;
 }
 
